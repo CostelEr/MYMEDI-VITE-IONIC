@@ -1,11 +1,7 @@
-import { ViteInitialApp } from "./components/vite-initial-app/ViteInitialApp";
+import { AddInformationButton } from "./components/add-information-button/AddInformationButton";
 
 function App() {
-  return (
-    <div className="App">
-      <ViteInitialApp></ViteInitialApp>
-    </div>
-  );
+  return <AddInformationButton></AddInformationButton>;
 }
 
 export default App;
