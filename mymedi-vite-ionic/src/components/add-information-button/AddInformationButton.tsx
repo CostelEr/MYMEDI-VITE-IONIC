@@ -25,7 +25,7 @@ setupIonicReact();
 
 export function AddInformationButton() {
   return (
-    <IonFab vertical="bottom" horizontal="center" edge slot="fixed">
+    <IonFab vertical="bottom" horizontal="center" slot="fixed">
       <IonFabButton>
         <IonIcon icon={add}></IonIcon>
       </IonFabButton>
