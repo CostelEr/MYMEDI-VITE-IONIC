@@ -1,6 +1,6 @@
-import { IonApp, setupIonicReact } from "@ionic/react";
-import { AddInformationButton } from "./components/add-information-button/AddInformationButton";
+import { IonApp } from "@ionic/react";
 
+import { AddInformationButton } from "./components/add-information-button/AddInformationButton";
 import { AddPersonPage } from "./components/add-person-page/AddPersonPage";
 
 function App() {
