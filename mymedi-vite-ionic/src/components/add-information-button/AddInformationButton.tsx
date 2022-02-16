@@ -29,9 +29,8 @@ export function AddInformationButton() {
       <IonFabButton>
         <IonIcon icon={add}></IonIcon>
       </IonFabButton>
-      <IonFabList></IonFabList>
       <IonFabList side="top">
-        <IonChip color="primary">
+        <IonChip color="primary" className="bg-slate-700">
           <IonLabel>TEMPERATURE</IonLabel>
           <IonIcon icon={thermometerOutline}></IonIcon>
         </IonChip>

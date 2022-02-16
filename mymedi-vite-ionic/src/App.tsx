@@ -8,7 +8,6 @@ function App() {
   return (
     <IonApp>
       <AddPersonPage></AddPersonPage>
-      <div className="border-2 bg-gray-800 text-white">Salut</div>
       <AddInformationButton></AddInformationButton>
     </IonApp>
   );
