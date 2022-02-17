@@ -1,12 +1,19 @@
-import { IonApp } from "@ionic/react";
+import { IonApp, setupIonicReact } from "@ionic/react";
 
 import { AddInformationButton } from "./components/add-information-button/AddInformationButton";
 import { AddPersonPage } from "./components/add-person-page/AddPersonPage";
-import "./output.css";
+
+import "@ionic/react/css/core.css";
+
+setupIonicReact();
+import "./index.css";
+
+import { AddFamilyMember } from "./components/add-family-member/AddFamilyMember";
 
 function App() {
   return (
     <IonApp>
+      <AddFamilyMember></AddFamilyMember>
       <AddPersonPage></AddPersonPage>
       <AddInformationButton></AddInformationButton>
     </IonApp>
