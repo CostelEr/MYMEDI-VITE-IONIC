@@ -10,8 +10,6 @@ import {
   IonAvatar,
   IonSelect,
   IonSelectOption,
-  IonCard,
-  IonContent,
 } from "@ionic/react";
 
 export function AddFamilyMember() {

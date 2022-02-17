@@ -13,6 +13,7 @@ import { AddFamilyMember } from "./components/add-family-member/AddFamilyMember"
 function App() {
   return (
     <IonApp>
+      <div className="bg-black text-white">12359</div>
       <AddFamilyMember></AddFamilyMember>
       <AddPersonPage></AddPersonPage>
       <AddInformationButton></AddInformationButton>
