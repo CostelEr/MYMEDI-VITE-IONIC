@@ -12,6 +12,8 @@ import {
   IonSelectOption,
 } from "@ionic/react";
 
+import "../../index.css";
+
 export function AddFamilyMember() {
   return (
     <div>
