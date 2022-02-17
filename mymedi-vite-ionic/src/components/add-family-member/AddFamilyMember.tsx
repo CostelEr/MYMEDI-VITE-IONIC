@@ -19,13 +19,17 @@ export function AddFamilyMember() {
     <div>
       <IonHeader translucent>
         <IonToolbar>
-          <IonTitle color="primary">Adaugă o persoană nouă</IonTitle>
+          <IonTitle color="primary">
+            <div className="flex justify-center pt-4">
+              Adaugă o persoană nouă
+            </div>
+          </IonTitle>
         </IonToolbar>
       </IonHeader>
 
       <div className="flex justify-center pt-4">
         <IonAvatar>
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
+          <img src="https://zm-cs.ru/files/avatars/1537189754.jpg" />
         </IonAvatar>
       </div>
 
@@ -103,7 +107,7 @@ export function AddFamilyMember() {
         </IonSelect>
       </IonItem>
 
-      <IonItem lines="none">
+      <IonItem>
         <IonLabel>Anul</IonLabel>
         <IonSelect value="2022">
           <IonSelectOption value="1989">1989</IonSelectOption>
@@ -142,10 +146,11 @@ export function AddFamilyMember() {
           <IonSelectOption value="2022">2022</IonSelectOption>
         </IonSelect>
       </IonItem>
-
-      <IonButton className="ion-margin-top" type="submit" expand="block">
-        Save
-      </IonButton>
+      <div className="pt-4">
+        <IonButton className="ion-margin-top" type="submit" expand="block">
+          Save
+        </IonButton>
+      </div>
     </div>
   );
 }
