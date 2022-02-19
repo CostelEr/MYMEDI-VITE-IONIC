@@ -12,8 +12,9 @@ import {
   IonSelectOption,
 } from "@ionic/react";
 
-import "../../index.css";
 import { DateTimeReact } from "../date-time-react/DateTimeReact";
+
+import "../../index.css";
 
 export function AddFamilyMember() {
   return (
@@ -39,6 +40,12 @@ export function AddFamilyMember() {
         <IonInput />
       </IonItem>
 
+      <div className="m-4">
+        <IonItem lines="none">
+          <DateTimeReact></DateTimeReact>
+        </IonItem>
+      </div>
+
       <IonItem>
         <IonLabel>Genul</IonLabel>
         <IonSelect value="bărbat">
@@ -47,14 +54,9 @@ export function AddFamilyMember() {
         </IonSelect>
       </IonItem>
 
-      <IonItem lines="none">
-        <DateTimeReact></DateTimeReact>
-      </IonItem>
-      <IonItem lines="none">
-        <div className="pt-4 flex justify-center">
-          <IonButton>Save</IonButton>
-        </div>
-      </IonItem>
+      <div className="flex justify-center mt-4">
+        <IonButton>Save</IonButton>
+      </div>
     </div>
   );
 }
