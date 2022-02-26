@@ -6,7 +6,6 @@ import { TimeLine } from "./components/time-line/TimeLine";
 
 import "@ionic/react/css/core.css";
 import "./index.css";
-import { AddPersonPage } from "./components/add-person-page/AddPersonPage";
 
 function App() {
   return (

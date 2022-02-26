@@ -21,9 +21,6 @@ export function AddNote() {
         <IonLabel position="stacked">Conținutul notiței</IonLabel>
         <IonTextarea placeholder="Conținutul notiței"></IonTextarea>
       </IonItem>
-      <div className="flex justify-center mt-4">
-        <IonButton>Save</IonButton>
-      </div>
     </div>
   );
 }
