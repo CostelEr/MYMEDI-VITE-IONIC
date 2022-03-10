@@ -1,5 +1,4 @@
 import { useRef, useState, useEffect } from "react";
-import "./ImageUpload.css";
 
 export function ImageUpload() {
   const [image, setImage] = useState<File>();
@@ -19,9 +18,10 @@ export function ImageUpload() {
   }, [image]);
 
   return (
-    <div className="bg-red-700 text-center text-white flex justify-center">
+    <div className="bg-red-700 text-center text-white flex justify-center w-full h-20">
       {preview ? (
         <img
+          className="w-20 h-20"
           src={preview}
           style={{ objectFit: "cover" }}
           onClick={() => {
@@ -36,7 +36,7 @@ export function ImageUpload() {
           }}
           className="rounded-full bg-yellow-300 text-black"
         >
-          Add Image
+          +
         </button>
       )}
       <input
