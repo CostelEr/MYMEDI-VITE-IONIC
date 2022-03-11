@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 
-export function ImageUpload() {
+export function ImageUploadExample() {
   const [image, setImage] = useState<File>();
   const [preview, setPreview] = useState<string>();
   const fileInputRef = useRef<HTMLInputElement>();
@@ -21,7 +21,7 @@ export function ImageUpload() {
     <div className="bg-red-700 text-center text-white flex justify-center w-full h-20">
       {preview ? (
         <img
-          className="w-20 h-20"
+          className="w-20 h-20 rounded-full border-solid border-4 border-black"
           src={preview}
           style={{ objectFit: "cover" }}
           onClick={() => {
