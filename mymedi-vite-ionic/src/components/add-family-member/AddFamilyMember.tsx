@@ -15,6 +15,7 @@ import {
 import { DateTimeReact } from "../date-time-react/DateTimeReact";
 
 import "../../index.css";
+import { ImageUpload } from "../image-upload/ImageUpload";
 
 export function AddFamilyMember() {
   return (
@@ -30,9 +31,7 @@ export function AddFamilyMember() {
       </IonHeader>
 
       <div className="flex justify-center pt-4">
-        <IonAvatar>
-          <img src="https://zm-cs.ru/files/avatars/1537189754.jpg" />
-        </IonAvatar>
+        <ImageUpload></ImageUpload>
       </div>
 
       <IonItem>
