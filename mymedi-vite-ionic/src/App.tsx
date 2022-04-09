@@ -7,14 +7,14 @@ import { TimeLine } from "./components/time-line/TimeLine";
 import "@ionic/react/css/core.css";
 import "./index.css";
 import { AddFamilyMember } from "./components/add-family-member/AddFamilyMember";
+import { AddNewPerson } from "./components/add-new-person/AddNewPerson";
 
 function App() {
   return (
-    <IonApp>
-      {/* <TimeLine></TimeLine>
-      <AddInformationButton></AddInformationButton> */}
-      <AddFamilyMember></AddFamilyMember>
-    </IonApp>
+    <div>
+      <TimeLine></TimeLine>
+      <AddInformationButton></AddInformationButton>
+    </div>
   );
 }
 
