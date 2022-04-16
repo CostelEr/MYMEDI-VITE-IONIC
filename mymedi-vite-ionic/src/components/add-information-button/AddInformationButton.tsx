@@ -64,10 +64,10 @@ export function AddInformationButton() {
         </IonFabList>
       </IonFab>
       <IonModal isOpen={showModal}>
-        <AddNote></AddNote>
         <div className="flex justify-center mt-4">
-          <IonButton onClick={() => setShowModal(false)}>Save</IonButton>
+          <IonButton onClick={() => setShowModal(false)}>x</IonButton>
         </div>
+        <AddNote></AddNote>
       </IonModal>
     </div>
   );

@@ -8,12 +8,14 @@ import "@ionic/react/css/core.css";
 import "./index.css";
 import { AddFamilyMember } from "./components/add-family-member/AddFamilyMember";
 import { AddNewPerson } from "./components/add-new-person/AddNewPerson";
+import { AddNote } from "./components/add-note/AddNote";
 
 function App() {
   return (
     <div>
       <TimeLine></TimeLine>
       <AddInformationButton></AddInformationButton>
+      {/* <AddNote></AddNote> */}
     </div>
   );
 }
