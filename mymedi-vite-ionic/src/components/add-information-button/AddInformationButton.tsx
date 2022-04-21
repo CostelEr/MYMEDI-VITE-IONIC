@@ -27,7 +27,7 @@ import { AddNote } from "../add-note/AddNote";
 
 setupIonicReact();
 
-export function AddInformationButton() {
+export function AddInformationButton({ onAddedNote }) {
   const [showModal, setShowModal] = useState(false);
   return (
     <div>
@@ -67,7 +67,7 @@ export function AddInformationButton() {
         <div className="flex justify-center mt-4">
           <IonButton onClick={() => setShowModal(false)}>x</IonButton>
         </div>
-        <AddNote></AddNote>
+        <AddNote onSubmit={onAddedNote}></AddNote>
       </IonModal>
     </div>
   );

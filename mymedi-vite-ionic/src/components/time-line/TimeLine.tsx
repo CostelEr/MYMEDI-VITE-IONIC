@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   IonList,
   IonHeader,
   IonToolbar,
   IonTitle,
   IonListHeader,
-  IonAvatar,
   IonContent,
   IonItem,
   IonLabel,
@@ -14,7 +13,7 @@ import {
 } from "@ionic/react";
 import "../../index.css";
 
-export function TimeLine() {
+export function TimeLine({ note }) {
   return (
     <IonApp>
       <IonHeader translucent>
@@ -33,13 +32,7 @@ export function TimeLine() {
           <IonItem>
             <IonLabel>
               <div className="flex justify-start align-baseline">
-                <div className="text-2xl font-bold w-4/5">
-                  <IonText color="danger">
-                    <h2>
-                      38,0<sup>0</sup> Mild Fever
-                    </h2>
-                  </IonText>
-                </div>
+                <div className="text-2xl font-bold w-4/5">{note.content}</div>
                 <div className="w-1/5 flex justify-center">
                   <IonText color="dark">
                     <h3>9:48</h3>

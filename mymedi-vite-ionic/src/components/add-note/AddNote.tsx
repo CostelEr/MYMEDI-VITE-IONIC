@@ -8,7 +8,7 @@ interface INote {
   noteContent: string;
 }
 
-export function AddNote() {
+export function AddNote({ onSubmit }) {
   const [title, setTitle] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const [noteList, setNoteList] = useState<INote[]>([]);
@@ -16,7 +16,7 @@ export function AddNote() {
 
   const addNote = (): void => {
     const newNote = { noteName: title, noteContent: content };
-    setNoteList([...noteList, newNote]);
+    onSubmit({ title }, { content });
     setTitle(" ");
     setContent(" ");
   };

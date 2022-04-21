@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { IonApp, setupIonicReact } from "@ionic/react";
 setupIonicReact();
 
@@ -11,10 +12,18 @@ import { AddNewPerson } from "./components/add-new-person/AddNewPerson";
 import { AddNote } from "./components/add-note/AddNote";
 
 function App() {
+  const [note, setNote] = useState({});
+
+  const handleOnNoteAdded = (note) => {
+    setNote(note);
+  };
+
   return (
     <div>
-      <TimeLine></TimeLine>
-      <AddInformationButton></AddInformationButton>
+      <TimeLine note={note}></TimeLine>
+      <AddInformationButton
+        onAddedNote={handleOnNoteAdded}
+      ></AddInformationButton>
       {/* <AddNote></AddNote> */}
     </div>
   );

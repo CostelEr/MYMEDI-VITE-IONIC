@@ -1,7 +1,7 @@
-import { Parent } from "./Parent";
+import {Parent} from './Parent';
 
 export default {
-  title: "examples/Parent",
+  title: 'examples/Parent',
 };
 
 export const Default = () => {
