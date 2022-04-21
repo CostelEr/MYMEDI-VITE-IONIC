@@ -8,7 +8,7 @@ interface INote {
   noteContent: string;
 }
 
-export function AddNote() {
+export function AddNote({ onCloseNote }) {
   const [title, setTitle] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const [noteList, setNoteList] = useState<INote[]>([]);
@@ -19,6 +19,7 @@ export function AddNote() {
     setNoteList([...noteList, newNote]);
     setTitle(" ");
     setContent(" ");
+    onCloseNote(false);
   };
 
   return (

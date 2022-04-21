@@ -29,6 +29,10 @@ setupIonicReact();
 
 export function AddInformationButton() {
   const [showModal, setShowModal] = useState(false);
+  const onCloseNote = (isOpen: boolean) => {
+    setShowModal(isOpen);
+  };
+
   return (
     <div>
       <div className="bg-gray-800 text-white text-3xl"></div>
@@ -67,7 +71,7 @@ export function AddInformationButton() {
         <div className="flex justify-center mt-4">
           <IonButton onClick={() => setShowModal(false)}>x</IonButton>
         </div>
-        <AddNote></AddNote>
+        <AddNote onCloseNote={onCloseNote}></AddNote>
       </IonModal>
     </div>
   );
