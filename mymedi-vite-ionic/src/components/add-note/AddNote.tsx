@@ -16,9 +16,10 @@ export function AddNote({ onSubmit }) {
 
   const addNote = (): void => {
     const newNote = { noteName: title, noteContent: content };
-    onSubmit({ title }, { content });
-    setTitle(" ");
-    setContent(" ");
+
+    onSubmit({ noteList });
+    // setTitle(" ");
+    // setContent(" ");
   };
 
   return (
