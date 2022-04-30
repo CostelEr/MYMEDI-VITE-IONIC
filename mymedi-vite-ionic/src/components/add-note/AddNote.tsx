@@ -140,7 +140,14 @@ export function AddNote() {
   let minutes = hoursminutes[d.getMinutes()];
 
   const addNote = (): void => {
-    const newNote = { noteName: title, noteContent: content };
+    const newNote = {
+      noteName: title,
+      noteContent: content,
+      noteDay: day,
+      noteMounth: mounth,
+      noteHours: hours,
+      noteMinutes: minutes,
+    };
     setNoteList([...noteList, newNote]);
     setTitle(" ");
     setContent(" ");
@@ -189,6 +196,9 @@ export function AddNote() {
           return (
             <div>
               <p>{note.noteName}</p>
+              <p>
+                {day}, {d.getDate()} {mounth}, {hours}:{minutes}
+              </p>
               <p className="text-yellow-400">
                 {note.noteContent}
                 <button className="text-white">x</button>
