@@ -10,6 +10,11 @@ import {
 interface INote {
   noteName: string;
   noteContent: string;
+  noteDay: string;
+  noteMounth: string;
+  noteDate: number;
+  noteHours: string;
+  noteMinutes: string;
 }
 
 export function AddNote() {
@@ -145,6 +150,7 @@ export function AddNote() {
       noteContent: content,
       noteDay: day,
       noteMounth: mounth,
+      noteDate: d.getDate(),
       noteHours: hours,
       noteMinutes: minutes,
     };
@@ -201,7 +207,7 @@ export function AddNote() {
               </p>
               <p className="text-yellow-400">
                 {note.noteContent}
-                <button className="text-white">x</button>
+                {/* <button className="text-white">x</button> */}
               </p>
             </div>
           );
