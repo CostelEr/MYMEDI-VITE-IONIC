@@ -32,7 +32,10 @@ export function TimeLine({ note }) {
           <IonItem>
             <IonLabel>
               <div className="flex justify-start align-baseline">
-                <div className="text-2xl font-bold w-4/5">{note.content}</div>
+                <div className="text-2xl font-bold w-4/5">
+                  {note.title}
+                  {note.content}
+                </div>
                 <div className="w-1/5 flex justify-center">
                   <IonText color="dark">
                     <h3>9:48</h3>
