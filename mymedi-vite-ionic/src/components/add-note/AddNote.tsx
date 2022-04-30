@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { IonItem, IonLabel, IonInput, IonButton } from "@ionic/react";
+import {
+  IonItem,
+  IonLabel,
+  IonInput,
+  IonButton,
+  IonTextarea,
+} from "@ionic/react";
 
 interface INote {
   noteName: string;
@@ -166,30 +172,27 @@ export function AddNote() {
       </IonItem>
       <IonItem>
         <IonLabel position="stacked">Conținutul notiței</IonLabel>
-        <IonInput
+        <IonTextarea
           color="primary"
           placeholder="Conținutul notiței"
           value={content}
           onIonChange={(e) => setContent(e.detail.value!)}
-        ></IonInput>
+        ></IonTextarea>
       </IonItem>
       <div className="pt-4 flex justify-center">
         <IonButton onClick={addNote}>Save</IonButton>
       </div>
 
-      <div className="bg-red-700 text-2xl text-white flex justify-center py-2">
+      <div className="bg-red-700 text-2xl text-white py-2 overflow-scroll">
         {noteList.map((note: INote, key: number) => {
           // return <TodoTask key={key} task={task} completeTask={completeTask} />;
           return (
             <div>
-              <div>
-                <p>
-                  <span>{note.noteName}</span> <span>|</span>
-                  <span className="text-yellow-400">{note.noteContent}</span>
-                  <button className="text-white">x</button>
-                </p>
-              </div>
-              <br></br>
+              <p>{note.noteName}</p>
+              <p className="text-yellow-400">
+                {note.noteContent}
+                <button className="text-white">x</button>
+              </p>
             </div>
           );
         })}
