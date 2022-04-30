@@ -147,7 +147,7 @@ export function AddNote() {
   };
 
   return (
-    <div>
+    <div className="overflow-y-scroll">
       <IonItem>
         <IonLabel color="primary">
           <div className="flex w-full">
@@ -183,7 +183,7 @@ export function AddNote() {
         <IonButton onClick={addNote}>Save</IonButton>
       </div>
 
-      <div className="bg-red-700 text-2xl text-white py-2 overflow-scroll">
+      <div className="bg-red-700 text-2xl text-white py-2">
         {noteList.map((note: INote, key: number) => {
           // return <TodoTask key={key} task={task} completeTask={completeTask} />;
           return (
