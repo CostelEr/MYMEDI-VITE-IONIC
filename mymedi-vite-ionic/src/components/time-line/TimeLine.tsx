@@ -14,7 +14,7 @@ import {
 } from "@ionic/react";
 import "../../index.css";
 
-export function TimeLine() {
+export function TimeLine({}) {
   return (
     <IonApp>
       <IonHeader translucent>
