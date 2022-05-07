@@ -69,7 +69,7 @@ export function AddInformationButton() {
       </IonFab>
       <IonModal isOpen={showModal}>
         <div className="flex justify-center mt-4">
-          <IonButton onClick={() => setShowModal(false)}>x</IonButton>
+          {/* <IonButton onClick={() => setShowModal(false)}>x</IonButton> */}
         </div>
         <AddNote onCloseNote={onCloseNote}></AddNote>
       </IonModal>
