@@ -85,7 +85,8 @@ export function AddNote() {
             <div>
               <p>{note.noteName}</p>
               <p>
-                {day}, {d.getDate()} {mounth}, {hours}:{minutes}
+                {note.noteDay}, {d.getDate()} {note.noteMounth},{" "}
+                {note.noteHours}:{note.noteMinutes}
               </p>
               <p className="text-yellow-400">
                 {note.noteContent}
