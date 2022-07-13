@@ -13,8 +13,7 @@ import { AddNote } from "./components/add-note/AddNote";
 function App() {
   return (
     <div>
-      <TimeLine></TimeLine>
-      <AddInformationButton></AddInformationButton>
+      <AddNewPerson></AddNewPerson>
       {/* <AddNote></AddNote> */}
     </div>
   );
